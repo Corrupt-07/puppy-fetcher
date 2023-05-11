@@ -1,0 +1,254 @@
+.card-img-overlay {
+    top: 180px !important;
+    background-color: #80808087 !important;
+}
+
+.card-title,
+.card-subtitle,
+.card-text {
+    margin: 0 !important;
+    color: #fff;
+}
+
+.card-link+.card-link {
+    margin-left: 0;
+}
+
+.price-tag {
+    color: lightgreen !important;
+}
+
+.highspire {
+    color: #fff;
+}
+
+.card-img {
+    border-radius: 40px 0px 40px 0px;
+}
+
+
+.card-img-overlay {
+    border-radius: 0px 0px 40px 0px;
+}
+
+#breed-matchmaker-content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    /* margin: 20px; */
+    border-radius: 10px;
+    margin-right: 15px !important;
+}
+
+#breed-matchmaker-range {
+    margin-right: 15px !important;
+    padding: 20px;
+    /* margin: 20px; */
+    background-color: #f0808017;
+}
+
+.card-img1:hover,
+.card-img2:hover {
+    z-index: 99;
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+    overflow: hidden !important;
+
+}
+
+.card-img1,
+.card-img2 {
+    height: 19em;
+    width: auto;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .2s;
+}
+
+
+
+.fa-cog,
+.fa-heart {
+    cursor: pointer;
+}
+
+
+#accordionSectionFilter {
+    padding: 10px;
+    border-bottom: 2px solid rgba(228, 162, 104, 255) !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+#puppies_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.fa-star {
+    color: goldenrod;
+}
+
+
+
+
+p {
+    font-weight: 500;
+}
+
+.card-title,
+.card-text {
+    color: #3d2121 !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-body {
+    font-size: 0.9em !important;
+}
+
+.categories__accordion {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15) !important;
+    padding-bottom: 20px;
+    border-radius: 20px;
+
+}
+
+.sort-by-btn {
+    background-color: transparent !important;
+    color: #3d2121 !important;
+    text-align: right;
+    text-decoration: none !important;
+}
+
+.site-color {
+    color: #3d2121 !important;
+}
+
+#puppies_card,
+.next-btn-next {
+    padding: 10px;
+}
+
+.heart-section-card {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: flex;
+    justify-content: end;
+    border-radius: 0px 0px 0px 65%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.heart {
+    text-shadow: 0 0 4px rgba(254, 25, 1, 255);
+    color: #fff;
+}
+
+.next-btn {
+    background-color: rgba(129, 68, 14, 255);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+}
+
+#trusted {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15) !important;
+    border: 3px solid #3d2121 !important;
+    padding: 20px;
+}
+
+
+.block-7-shadow {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.trusted_section {
+    position: relative;
+    top: 60px;
+}
+
+.trusted-content {
+    background-color: #fff;
+    border: 2px solid #3d2121;
+}
+
+
+.review-cards {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15) !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.review {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    border: 2px solid;
+    background: none !important;
+    padding-right: 65px;
+    padding-left: 65px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+
+    border-radius: 40px;
+}
+
+@media screen and (max-width: 991px) {
+    .collectionImg {
+        justify-content: center !important;
+    }
+
+    .card-img1,
+    .card-img2 {
+        height: 20em !important;
+        width: 20em !important;
+    }
+
+    .card-img1:hover,
+    .card-img2:hover {
+        -ms-transform: scale(0.5);
+        /* IE 9 */
+        -webkit-transform: scale(0.5);
+        /* Safari 3-8 */
+        transform: scale(1.1);
+
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .a3 {
+        width: 17em !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .filters,
+    .reset {
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #mobile-view-cards {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+
+    #main-view {
+        justify-content: center;
+    }
+}

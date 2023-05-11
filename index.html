@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>PuppyFetcher</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index-style.css">
+
+</head>
+
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="mr-2" width="200" height="90"
+					alt="" srcset=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="fa fa-bars"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item "><a href="about-us.html" class="nav-link">About Us</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">List a Puppy</a></li>
+					<li class="nav-item"><a href="puppies_for_sale.html" class="nav-link">Find a Puppy</a></li>
+					<li class="nav-item"><a href="dog-profile.html" class="nav-link">Breed Matcher</a></li>
+					<li class="nav-item"><a href="gallery.html" class="nav-link">Wishlist</a></li>
+					<li class="nav-item"><a href="signup-1.html" class="nav-link text-success">Login/Signup</a></li>
+					<li class="nav-item"><a href="#"
+							class="nav-link d-flex align-items-center mr-1 font-weight-light"><img
+								src="images/googlemap.png" height="15" width="15" alt="" srcset="">Your Location</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+	<div class="hero-wrap js-fullheight" style="background-image: url('images/banner.png'); height: 580px ;display: flex;
+		align-items: center; background-position: 100% 100%;">
+
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"
+				data-scrollax-parent="true">
+				<div class="col-md-12 ftco-animate text-center">
+					<div class="container" style="background-color: #ffffffa6;
+					border-radius: 20px;
+					padding: 40px;">
+						<div class="row">
+							<div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate flex-column">
+								<div class="dropdown d-flex flex-column">
+									<label for="customRange1" class="form-label filter-text">Breed</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+										<option>Any</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate flex-column">
+								<div class="dropdown d-flex flex-column">
+									<label for="customRange1" class="form-label filter-text">Age</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+										<option>Any</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate flex-column">
+								<div class="dropdown d-flex flex-column">
+									<label for="customRange1" class="form-label filter-text">Gender</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+										<option>Any</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate flex-column">
+								<div class="dropdown d-flex flex-column">
+									<label for="customRange1" class="form-label filter-text">Location</label>
+									<select class="form-control" id="exampleFormControlSelect1">
+										<option>Any</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mt-4">
+							<div class="col-md-9 d-flex align-self-stretch px-4 ftco-animate"
+								style="flex-direction: column;">
+								<label for="customRange1" class="form-label filter-text">Range</label>
+								<div class="slider">
+									<div class="progress"></div>
+								</div>
+								<div class="range-input d-flex">
+									<input type="range" class="range-min" min="100" max="6000" value="1" step="100">
+									<input type="range" class="range-max" min="100" max="6000" value="6000" step="100">
+								</div>
+								<div class="d-flex justify-content-between price-input">
+									<div class="d-flex align-items-center ">
+										<label class="mt-2" for="">$</label>
+										<input style="background-color: transparent !important; border: none;"
+											type="number" class="input-min" value="100">
+									</div>
+									<div class="d-flex align-items-center justify-content-end">
+										<label class="mt-2" for="">$</label>
+										<input id="price6000" type="number" class="input-max input-filter" value="6000">
+
+
+									</div>
+
+								</div>
+
+
+							</div>
+
+							<div class="col-md-3 d-flex align-self-stretch px-4 ftco-animate flex-column">
+
+								<button type="button" class="btn btn-transparent mt-2 clear-btn">Clear Filter</button>
+
+								<button type="button" style="background-color: green;"
+									class="btn btn-success mt-2">Search</button>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<section class="container mt-4">
+		<div class="title">
+			<h1 class="new-puppies-heading">New Puppies</h1><br>
+		</div>
+		<div class="row row-cols-1 row-cols-md-3 g-4">
+
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-12 col-sm-8 col-md-6 col-lg-3 mt-3" id="mobile-view-card">
+						<div class="card new-puppies-cards">
+							<div class="heading-card d-flex justify-content-between">
+								<img class="new-puppies-cards-img" src="./images/premium.png" alt="">
+								<!-- <i class="fa fa-cog fa-2x"
+									style="position: absolute; left: 20px; top: 10px; color: #5959dd;"
+									aria-hidden="true"></i> -->
+								<i class="fa fa-heart fa-2x"
+									style="position: absolute; right: 10px; top: 10px; color: red;"></i>
+							</div>
+							<img class="card-img" src="images/gallery-1.jpg" alt="Bologna">
+							<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+								<h4 class="card-title">Dazy</h4>
+								<h6 class="card-subtitle mb-2">Siberian Husky</h6>
+								<p class="card-text">Female, Born on 10/12/2022 </p>
+								<div class="link d-flex flex-column">
+									<a href="#" class="card-link text-warning"><span class="highspire">Highspire,
+											PA</span> </a>
+									<a href="#" class="card-link text-warning"><span class="price-tag">$1900</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-3 mt-3" id="mobile-view-card">
+						<div class="card new-puppies-cards">
+							<div class="heading-card d-flex justify-content-between">
+								<img src="./images/premium.png" alt="" class="new-puppies-cards-img">
+								<i class="fa fa-heart fa-2x" style="position: absolute; right: 10px; top: 10px;"></i>
+							</div>
+							<img class="card-img" src="images/gallery-2.jpg" alt="Bologna">
+							<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+								<h4 class="card-title">Tommy</h4>
+								<h6 class="card-subtitle mb-2">Siberian Husky</h6>
+								<p class="card-text">Female, Born on 10/12/2022 </p>
+								<div class="link d-flex flex-column">
+									<a href="#" class="card-link text-warning"><span class="highspire">Highspire,
+											PA</span></a>
+									<a href="#" class="card-link text-warning"><span class="price-tag">$1900</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-3 mt-3" id="mobile-view-card">
+						<div class="card new-puppies-cards">
+							<div class="heading-card d-flex justify-content-between">
+								<img src="./images/premium.png" alt="" class="new-puppies-cards-img">
+								<i class="fa fa-heart fa-2x" style="position: absolute; right: 10px; top: 10px;"></i>
+							</div>
+							<img class="card-img" src="images/gallery-3.jpg" alt="Bologna">
+							<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+								<h4 class="card-title">Brono</h4>
+								<h6 class="card-subtitle mb-2">Labradar</h6>
+								<p class="card-text">Female, Born on 10/12/2022</p>
+								<div class="link d-flex flex-column">
+									<a href="#" class="card-link text-warning"><span class="highspire">Highspire,
+											PA</span></a>
+									<a href="#" class="card-link text-warning"><span class="price-tag">$1900</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-3 mt-3" id="mobile-view-card">
+						<div class="card new-puppies-cards">
+							<div class="heading-card d-flex justify-content-between">
+								<img src="./images/premium.png" alt="" class="new-puppies-cards-img">
+								<i class="fa fa-heart fa-2x" style="position: absolute; right: 10px; top: 10px;"></i>
+							</div>
+							<img class="card-img" src="images/gallery-4.jpg" alt="Bologna">
+							<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+								<h4 class="card-title">Diti</h4>
+								<h6 class="card-subtitle mb-2">German Shepard</h6>
+								<p class="card-text">Female, Born on 10/12/2022 </p>
+								<div class="link d-flex flex-column">
+									<a href="#" class="card-link text-warning"><span class="highspire">Highspire,
+											PA</span></a>
+									<a href="#" class="card-link text-warning"><span class="price-tag">$1900</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-3 mt-3" id="mobile-view-card">
+						<div class="card new-puppies-cards">
+							<div class="heading-card d-flex justify-content-between">
+								<!-- <i class="fa fa-cog fa-2x" style="position: absolute; left: 20px; top: 10px; color: #5959dd;" aria-hidden="true"></i> -->
+								<i class="fa fa-heart fa-2x" style="position: absolute; right: 10px; top: 10px;"></i>
+							</div>
+							<img class="card-img" src="images/gallery-1.jpg" alt="Bologna">
+							<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+								<h4 class="card-title">Dazy</h4>
+								<h6 class="card-subtitle mb-2">Siberian Husky</h6>
+								<p class="card-text">Female, Born on 10/12/2022 </p>
+								<div class="link d-flex flex-column">
+									<a href="#" class="card-link text-warning"><span class="highspire">Highspire,
+											PA</span></a>
+									<a href="#" class="card-link text-warning"><span class="price-tag">$1900</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-3 mt-3" id="mobile-view-card">
+						<div class="card new-puppies-cards">
+							<div class="heading-card d-flex justify-content-between">
+								<!-- <i class="fa fa-cog fa-2x" style="position: absolute; left: 20px; top: 10px; color: #5959dd;" aria-hidden="true"></i> -->
+								<i class="fa fa-heart fa-2x" style="position: absolute; right: 10px; top: 10px;"></i>
+							</div>
+							<img class="card-img" src="images/gallery-2.jpg" alt="Bologna">
+							<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+								<h4 class="card-title">Tommy</h4>
+								<h6 class="card-subtitle mb-2">Siberian Husky</h6>
+								<p class="card-text">Female, Born on 10/12/2022 </p>
+								<div class="link d-flex flex-column">
+									<a href="#" class="card-link text-warning"><span class="highspire">Highspire,
+											PA</span></a>
+									<a href="#" class="card-link text-warning"><span class="price-tag">$1900</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-3 mt-3" id="mobile-view-card">
+						<div class="card new-puppies-cards">
+							<div class="heading-card d-flex justify-content-between">
+								<!-- <i class="fa fa-cog fa-2x" style="position: absolute; left: 20px; top: 10px; color: #5959dd;" aria-hidden="true"></i> -->
+								<i class="fa fa-heart fa-2x" style="position: absolute; right: 10px; top: 10px;"></i>
+							</div>
+							<img class="card-img" src="images/gallery-3.jpg" alt="Bologna">
+							<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+								<h4 class="card-title">Brono</h4>
+								<h6 class="card-subtitle mb-2">Labradar</h6>
+								<p class="card-text">Female, Born on 10/12/2022</p>
+								<div class="link d-flex flex-column">
+									<a href="#" class="card-link text-warning"><span class="highspire">Highspire,
+											PA</span></a>
+									<a href="#" class="card-link text-warning"><span class="price-tag">$1900</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-8 col-md-6 col-lg-3 mt-3" id="mobile-view-card">
+						<div class="card new-puppies-cards">
+							<div class="heading-card d-flex justify-content-between">
+								<!-- <i class="fa fa-cog fa-2x" style="position: absolute; left: 20px; top: 10px; color: #5959dd;" aria-hidden="true"></i> -->
+								<i class="fa fa-heart fa-2x" style="position: absolute; right: 10px; top: 10px;"></i>
+							</div>
+							<img class="card-img" src="images/gallery-4.jpg" alt="Bologna">
+							<div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+								<h4 class="card-title">Diti</h4>
+								<h6 class="card-subtitle mb-2">German Shepard</h6>
+								<p class="card-text">Female, Born on 10/12/2022 </p>
+								<div class="link d-flex flex-column">
+									<a href="#" class="card-link text-warning"><span class="highspire">Highspire,
+											PA</span></a>
+									<a href="#" class="card-link text-warning"><span class="price-tag">$1900</span> </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb " style="margin-top: 70px;">
+
+		<h1 class="collection-heading">Collections</h1><br>
+		<div class="container">
+			<div class="row align-items-center justify-content-center">
+				<div class="col-sm-12 col-lg-4 d-flex justify-content-center collectionImg mt-2"
+					style="margin: 0; padding: 0;">
+					<img class="card-img1 collection-imgs" src="images/collection1.png" alt="Bologna"
+						>
+				</div>
+
+				<div class="col-sm-12 col-lg-4 d-flex justify-content-center collectionImg mt-2"
+					style="margin: 0; padding: 0;">
+					<img class="card-img2 collection-imgs" src="images/collection2.png" alt="Bologna"
+						>
+				</div>
+				<div class="col-sm-12 col-lg-4 d-flex justify-content-center collectionImg mt-2"
+					style="margin: 0; padding: 0;">
+					<img class="card-img1 collection-imgs" src="images/collection3.png" alt="Bologna"
+						>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<br><br>
+	<section>
+
+		<h1 class="text-center mt-4 breed-matcher-heading">Breed Matchmaker</h1><br>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="container">
+						<div class="col-lg-12 col-sm-12" style="margin: 0;" id="breed-matchmaker-content">
+							<h6>What size range is ok</h6>
+						</div>
+						<div class="col-lg-12 col-sm-12 d-flex flex-column" style="margin: 0;"
+							id="breed-matchmaker-range">
+							<div class="d-flex justify-content-between">
+								<label for="customRange1" class="form-label">Miniture</label>
+								<label for="customRange1" class="form-label">Extra Large</label>
+							</div>
+
+							<div class="slider">
+								<div class="progress" id="slider1" style="background-color: black !important;"></div>
+							</div>
+							<div class="range-input d-flex">
+								<input type="range" class="range-min2" id="lower" min="0" max="100" value="0">
+								<input type="range" class="range-max2" id="upper" min="0" max="100" value="100">
+							</div>
+						</div>
+						<div class="col-lg-12 col-sm-12" style="margin: 0;" id="breed-matchmaker-content">
+							<h6>How much grooming is ok?</h6>
+						</div>
+
+						<div class="col-lg-12 col-sm-12 d-flex flex-column" style="margin: 0;"
+							id="breed-matchmaker-range">
+							<div class="d-flex justify-content-between">
+								<label for="customRange1" class="form-label">Miniture</label>
+								<label for="customRange1" class="form-label">Extra Large</label>
+							</div>
+
+							<div class="slider">
+								<div class="progress" id="slider2" style="background-color: black !important;"></div>
+							</div>
+							<div class="range-input d-flex">
+								<input type="range" class="range-min2" id="lower" min="0" max="100" value="0">
+								<input type="range" class="range-max2" id="upper" min="0" max="100" value="100">
+							</div>
+						</div>
+						<div class="col-lg-12 col-sm-12" style="margin: 0;" id="breed-matchmaker-content">
+							<h6>Playfulness Preference ?</h6>
+						</div>
+
+						<div class="col-lg-12 col-sm-12 d-flex flex-column" style="margin: 0;"
+							id="breed-matchmaker-range">
+							<div class="d-flex justify-content-between">
+								<label for="customRange1" class="form-label">Miniture</label>
+								<label for="customRange1" class="form-label">Extra Large</label>
+							</div>
+							<div class="slider">
+								<div class="progress" id="slider3" style="background-color: black !important;"></div>
+							</div>
+							<div class="range-input d-flex">
+								<input type="range" class="range-min2" id="lower" min="0" max="100" value="0">
+								<input type="range" class="range-max2" id="upper" min="0" max="100" value="100">
+							</div>
+						</div>
+						<div class="col-lg-12 col-sm-12" style="margin: 0;" id="breed-matchmaker-content">
+							<h6>Do you need Watchdog ?</h6>
+						</div>
+
+						<div class="col-lg-12 col-sm-12 d-flex flex-column" style="margin: 0;"
+							id="breed-matchmaker-range">
+							<div class="d-flex justify-content-between">
+								<label for="customRange1" class="form-label">Miniture</label>
+								<label for="customRange1" class="form-label">Extra Large</label>
+							</div>
+							<div class="slider">
+								<div class="progress" id="slider4" style="background-color: black !important;"></div>
+							</div>
+							<div class="range-input d-flex">
+								<input type="range" class="range-min2" id="lower" min="0" max="100" value="0">
+								<input type="range" class="range-max2" id="upper" min="0" max="100" value="100">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-6">
+					<div class="container">
+						<div class="col-lg-12 col-sm-12" style="margin: 0;" id="breed-matchmaker-content">
+							<h6>What size range is ok</h6>
+						</div>
+						<div class="col-lg-12 col-sm-12 d-flex flex-column" style="margin: 0;"
+							id="breed-matchmaker-range">
+							<div class="d-flex justify-content-between">
+								<label for="customRange1" class="form-label">Miniture</label>
+								<label for="customRange1" class="form-label">Extra Large</label>
+							</div>
+
+							<div class="slider">
+								<div class="progress" id="slider5" style="background-color: black !important;"></div>
+							</div>
+							<div class="range-input d-flex">
+								<input type="range" class="range-min2" id="lower" min="0" max="100" value="0">
+								<input type="range" class="range-max2" id="upper" min="0" max="100" value="100">
+							</div>
+						</div>
+						<div class="col-lg-12 col-sm-12" style="margin: 0;" id="breed-matchmaker-content">
+							<h6>How much grooming is ok?</h6>
+						</div>
+
+						<div class="col-lg-12 col-sm-12 d-flex flex-column" style="margin: 0;"
+							id="breed-matchmaker-range">
+							<div class="d-flex justify-content-between">
+								<label for="customRange1" class="form-label">Miniture</label>
+								<label for="customRange1" class="form-label">Extra Large</label>
+							</div>
+							<div class="slider">
+								<div class="progress" id="slider6" style="background-color: black !important;"></div>
+							</div>
+							<div class="range-input d-flex">
+								<input type="range" class="range-min2" id="lower" min="0" max="100" value="0">
+								<input type="range" class="range-max2" id="upper" min="0" max="100" value="100">
+							</div>
+						</div>
+						<div class="col-lg-12 col-sm-12" style="margin: 0;" id="breed-matchmaker-content">
+							<h6>Playfulness Preference ?</h6>
+						</div>
+
+						<div class="col-lg-12 col-sm-12 d-flex flex-column" style="margin: 0;"
+							id="breed-matchmaker-range">
+							<div class="d-flex justify-content-between">
+								<label for="customRange1" class="form-label">Miniture</label>
+								<label for="customRange1" class="form-label">Extra Large</label>
+							</div>
+							<div class="slider">
+								<div class="progress" id="slider7" style="background-color: black !important;"></div>
+							</div>
+							<div class="range-input d-flex">
+								<input type="range" class="range-min2" id="lower" min="0" max="100" value="0">
+								<input type="range" class="range-max2" id="upper" min="0" max="100" value="100">
+							</div>
+						</div>
+						<div class="col-lg-12 col-sm-12" style="margin: 0;" id="breed-matchmaker-content">
+							<h6>Do you need Watchdog ?</h6>
+						</div>
+
+						<div class="col-lg-12 col-sm-12 d-flex flex-column" style="margin: 0;"
+							id="breed-matchmaker-range">
+							<div class="d-flex justify-content-between">
+								<label for="customRange1" class="form-label">Miniture</label>
+								<label for="customRange1" class="form-label">Extra Large</label>
+							</div>
+							<div class="slider">
+								<div class="progress" id="slider8" style="background-color: black !important;"></div>
+							</div>
+							<div class="range-input d-flex">
+								<input type="range" class="range-min2" id="lower" min="0" max="100" value="0">
+								<input type="range" class="range-max2" id="upper" min="0" max="100" value="100">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="d-flex col-lg-12 justify-content-center mt-4">
+					<button class="btn btn-success" style="width: 25%;">Submit</button>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+
+
+	<section class="ftco-section">
+		<h1 class="text-center puppyfetcher-promises-heading">PuppyFetcher Promises </h1>
+		<div id="trusted" class="container"
+			>
+
+			<div class="row" style="margin-top: 50px;">
+				<div class="col-md-4 ftco-animate">
+					<div class="block-7 puppyfetcher-promises-block" >
+						<div class="img" style="background-image: url(images/pricing-1.jpg);"></div>
+						<div class="text-center">
+							<p>Our breeders are vetted and screened in partnership with USDA</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="block-7 puppyfetcher-promises-block">
+						<div class="img" style="background-image: url(images/pricing-2.jpg);"></div>
+						<div class="text-center">
+							<p>All our puppies recive our industry-leading 10-year puppy health commitment.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ftco-animate">
+					<div class="block-7 puppyfetcher-promises-block">
+						<div class="img" style="background-image: url(images/pricing-3.jpg);"></div>
+						<div class="text-center">
+							<p>Our private travel network ensures your pup arrives home healthy and safe</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 d-flex justify-content-center puppyfetcher-promises-down-section">
+					<div class="col-lg-8 d-flex align-items-center justify-content-center puppyfetcher-promises-down-section-content">
+						<img src="images/trust.png" alt="logo" srcset="">
+						<h3 class="trusted">Trusted By Over 1000+ Families</h3>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<div class="d-flex">
+						<img src="images/logo.jpg" alt="logo" srcset="" width="200">
+					</div>
+
+					<p class="footer-tex">Find a Puppy</p>
+					<a href="puppies_for_sale.html" class="footer-mini-text">View all
+						puppies</a><br>
+					<a href="puppies_for_sale.html" class="footer-mini-text">View all
+						Collections</a>
+					<div class="d-flex">
+						<button class="btn btn-dark mt-1" style="border-radius: 20px;">Bred match Quiz</button>
+					</div>
+
+					<ul class="ftco-footer-social d-flex justify-content-center mt-2">
+						<li class="ftco-animate m-1"><img class="footer_icon" src="images/footer_images/facebook.png"
+								alt="" srcset="" width="35" height="35"></li>
+						<li class="ftco-animate m-1"><img class="footer_icon" src="images/footer_images/instagram.png"
+								alt="" srcset="" width="35" height="35"></li>
+						<li class="ftco-animate m-1"><img class="footer_icon" src="images/footer_images/youtube.png"
+								alt="" srcset="" width="35" height="35"></li>
+
+						<li class="ftco-animate m-1"><img class="footer_icon" src="images/footer_images/twitter.png"
+								alt="" srcset="" width="35" height="35 "></li>
+						<li class="ftco-animate m-1"><img class="footer_icon" src="images/footer_images/google-plus.png"
+								alt="" srcset="" width="35" height="35"></li>
+						<li class="ftco-animate m-1"><img class="footer_icon" src="images/footer_images/linkedin.png"
+								alt="" srcset="" width="35" height="35"></li>
+
+
+					</ul>
+				</div>
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<p class="text-left" >Contact Us</p>
+					<p class="footer-mini-text">+1-777-567-88907</p>
+					<p class="footer-mini-text">Support@puppyfetcher.com</p>
+				</div>
+				<div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+					<p class="">Customer</p>
+
+					<a href="signup-1.html" class="footer-mini-text">Login</a>
+					<p href="signup-1.html" class="footer-mini-text">Signup</p>
+					<p class="footer-mini-text">Supoort</p>
+					<p class="footer-mini-text">Speical Offer</p>
+					<p href="signup-1.html" class="footer-mini-text">Breeder Login</p>
+
+				</div>
+				<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+					<p class="footer-mini-text">About PuppyFetcher</p><br>
+					<a href="about-us.html" class="footer-mini-text">About Us</a><br>
+					<a class="footer-mini-text">Puppy Fetcher promises</a><br>
+					<a class="footer-mini-text">Careers</a><br>
+					<a class="footer-mini-text">Dog Registration</a><br>
+					<a class="footer-mini-text">AKC Reunite</a><br>
+				</div>
+			</div>
+			<div class="col-md-12 d-flex align-items-center mt-4">
+				<img src="images/paypal.png" class="mr-3" alt="" srcset="" width="70" height="50">
+				<img src="images/Visa.png" class="mr-3" alt="" srcset="" width="70" height="30">
+				<img src="images/master_card.png" class="mr-3" alt="" srcset="" width="70" height="30">
+			</div>
+
+			<hr style="width:100%">
+		</div>
+	</footer>
+
+
+
+	<style>
+
+	</style>
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		let heart_icon = document.querySelectorAll('.fa-heart');
+		console.log(heart_icon);
+		heart_icon.forEach(heart_icon => {
+			heart_icon.addEventListener("click", e => {
+				console.log("clickd");
+				if (heart_icon.style.color == 'red') {
+					heart_icon.style.color = 'grey'
+				} else {
+					heart_icon.style.color = 'red'
+				}
+
+			});
+		});
+	</script>
+	<script>
+		const rangeInput = document.querySelectorAll(".range-input input"),
+			priceInput = document.querySelectorAll(".price-input input"),
+			range = document.querySelector(".slider .progress");
+		let priceGap = 100;
+
+		priceInput.forEach(input => {
+			input.addEventListener("input", e => {
+				let minPrice = parseInt(priceInput[0].value),
+					maxPrice = parseInt(priceInput[1].value);
+
+				if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) {
+					if (e.target.className === "input-min") {
+						rangeInput[0].value = minPrice;
+						range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%";
+					} else {
+						rangeInput[1].value = maxPrice;
+						range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+					}
+				}
+			});
+		});
+
+		rangeInput.forEach(input => {
+			input.addEventListener("input", e => {
+				let minVal = parseInt(rangeInput[0].value),
+					maxVal = parseInt(rangeInput[1].value);
+
+				if ((maxVal - minVal) < priceGap) {
+					if (e.target.className === "range-min") {
+						rangeInput[0].value = maxVal - priceGap
+					} else {
+						rangeInput[1].value = minVal + priceGap;
+					}
+				} else {
+					priceInput[0].value = minVal;
+					priceInput[1].value = maxVal;
+					range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
+					range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+				}
+			});
+		});
+
+	</script>
+
+	<script>
+		var lowerSlider = document.querySelectorAll('#lower'),
+			upperSlider = document.querySelectorAll('#upper');
+
+
+
+		// console.log(lowerSlider);
+		upperSlider.forEach((upperSlider, index) => {
+			upperSlider.addEventListener("input", event => {
+				var range1 = document.querySelector(`#slider${index + 1}`);
+				// console.log(range1);
+				// console.log(index);
+				console.log(upperSlider.previousSibling['previousSibling'].value);
+
+				lowerVal = upperSlider.previousSibling['previousSibling'].value;
+				upperVal = parseInt(upperSlider.value);
+				// console.log(lowerVal);
+				// console.log(upperVal);
+				if (upperVal - lowerVal <= 10) {
+					upperSlider.value = parseInt(upperSlider.previousSibling['previousSibling'].value) + 10;
+				} else {
+					range1.style.right = (100 - upperVal) + "%";
+				}
+
+			});
+		});
+
+		lowerSlider.forEach((lowerSlider, index) => {
+			lowerSlider.addEventListener("input", event => {
+				var range1 = document.querySelector(`#slider${index + 1}`);
+
+				console.log(lowerSlider.nextSibling['nextElementSibling'].value);
+				lowerVal = parseInt(lowerSlider.value);
+				upperVal = lowerSlider.nextSibling['nextElementSibling'].value;
+				if (upperVal - lowerVal <= 10) {
+					lowerSlider.value = parseInt(lowerSlider.nextSibling['nextElementSibling'].value) - 10;
+				}
+				else {
+					range1.style.left = lowerVal + "%";
+				}
+
+			});
+		});
+
+	</script>
+</body>
+
+</html>

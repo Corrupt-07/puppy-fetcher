@@ -1,0 +1,84 @@
+.our-team-imgs {
+    border: 4px solid black;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.give-shadow {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.our-team-heading {
+    margin: 0;
+    line-height: normal;
+}
+
+.achievements-cards {
+    border-radius: 20px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border: none !important;
+}
+
+.achievements-cards-img {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px !important;
+}
+
+
+.certifications-section {
+    border-radius: 20px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border: none !important;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1199px) {
+    .align-items-center {
+        align-items: normal !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    h1 {
+        text-align: center !important;
+    }
+
+    .banner-img {
+        height: 15em !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner-img {
+        height: 10em !important;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .text-center,
+    .card-title {
+        font-size: 20px !important;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 3000px) {
+    .banner-img {
+        height: 30em !important;
+    }
+}
